@@ -2,6 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
        
+        //! Região crítica
         SharedList sharedList = new SharedList();
 
         Thread t1 = new Thread(new Producer(sharedList));

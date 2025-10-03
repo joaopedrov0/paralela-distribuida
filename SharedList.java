@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+//! Região crítica
+
 public class SharedList {
 
     public boolean transferReady = false;
