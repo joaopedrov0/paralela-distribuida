@@ -6,16 +6,16 @@ public class SharedList {
 
     public boolean transferReady = false;
 
-    private ArrayList<Integer> list = new ArrayList<>();
+    private ArrayList<String> list = new ArrayList<>();
 
-    public synchronized Integer get() {
+    public synchronized String get() {
         if (list.size() > 0) {
             return list.remove(0);
         }
         return null;
     }
 
-    public synchronized void put(Integer value) {
+    public synchronized void put(String value) {
         list.add(value);
     }
 
